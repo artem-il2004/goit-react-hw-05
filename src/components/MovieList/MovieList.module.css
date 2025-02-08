@@ -1,19 +1,13 @@
-.container 
-{
+.container {
     display: flex;
-    padding: 10px;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    max-width: 300px;
     gap: 10px;
-    background-color: black;
-    color: aliceblue;
-    font-size: 26px;
-    margin-bottom: 20px;
-}
-.active {
-    color: red;
-    text-decoration: underline;
 }
 
-.link {
-    text-decoration: none;
+.list {
+    border: 2px solid rgb(0, 0, 0);
 }

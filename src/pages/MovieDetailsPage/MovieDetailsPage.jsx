@@ -11,7 +11,9 @@ function MovieDetailsPage() {
   const [error, setError] = useState(null);
 
   const location = useLocation();
-const goBackUrl = useRef(location?.state ?? '/movies')
+  const goBackUrl = useRef(location?.state ?? '/movies');
+
+  
   
 
   useEffect(() => {
@@ -36,7 +38,7 @@ const goBackUrl = useRef(location?.state ?? '/movies')
 
     return (
       <>
-        <Link to={goBackUrl}>Go back</Link>
+        <Link to={goBackUrl.current}>Go back</Link>
       <div className={c.container}>
       <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
           <div className={c.textContainer}> 

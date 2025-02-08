@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import MovieSearch from "../../components/MovieSearch/MovieSearch";
 import { getSearchedListOfFilms } from "../../api";
-import SearchedFilmList from "../../components/SearchedFilmList/SearchedFilmList";
+import MovieList from "../../components/MovieList/MovieList";
 
 export default function MoviesPage() {
     const [searchedFilms, setSearchedFilms] = useState([]);
@@ -52,7 +52,7 @@ export default function MoviesPage() {
             {error && <p>{error}</p>}
             {!loading && searchedFilms.length === 0 && query && <p>No results found.</p>}
 
-            <SearchedFilmList searchedFilms={searchedFilms} />
+            <MovieList searchedFilms={searchedFilms} />
         </div>
 
     </>
