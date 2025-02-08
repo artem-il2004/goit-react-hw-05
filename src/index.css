@@ -1,0 +1,81 @@
+/* Обнуление отступов и полей */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Убираем стандартные стили для списков */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Убираем стандартные стили для ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Убираем стандартные стили для кнопок */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Убираем стандартные стили для форм */
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  outline: none;
+}
+
+/* Убираем стандартные стили для изображений */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Убираем стандартные стили для таблиц */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Убираем стандартные стили для заголовков */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Убираем стандартные стили для параграфов */
+p {
+  margin: 0;
+}
+
+/* Убираем стандартные стили для body */
+body {
+  line-height: 1;
+  font-family: Arial, sans-serif;
+  /* Укажите ваш шрифт по умолчанию */
+  font-size: 16px;
+  /* Укажите ваш размер шрифта по умолчанию */
+  color: #000;
+  /* Укажите ваш цвет текста по умолчанию */
+  background-color: #fff;
+  /* Укажите ваш цвет фона по умолчанию */
+}

@@ -1,0 +1,19 @@
+.container 
+{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+    background-color: black;
+    color: aliceblue;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.active {
+    color: red;
+    text-decoration: underline;
+}
+
+.link {
+    text-decoration: none;
+}

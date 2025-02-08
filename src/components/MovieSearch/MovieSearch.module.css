@@ -1,0 +1,14 @@
+.container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 15px;
+    color: black;
+    font-weight: bolder;
+}
+.input
+{
+    padding: 5px 10px;
+        
+}
